@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPattern_Lab2
 {
-    internal class Decorator
-    {
+    public abstract class WeaponUpgrader : Weapon {
+        public abstract Weapon Upgrade(Weapon weapon);
     }
 }

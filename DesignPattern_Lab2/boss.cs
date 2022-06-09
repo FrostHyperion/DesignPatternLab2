@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace DesignPattern_Lab2 {
-    internal class Heros {
-        
+    public class Boss : Enemy {
+        public Boss(int damage, int health) : base(damage, health) { }
     }
 }

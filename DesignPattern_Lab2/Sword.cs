@@ -5,7 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace DesignPattern_Lab2 {
-    internal class Heros {
-        
+    class Sword : Weapon {
+        public Sword() {
+            Name = "Sword";
+            ChangeAttackDamage(15);
+        }    
     }
 }
