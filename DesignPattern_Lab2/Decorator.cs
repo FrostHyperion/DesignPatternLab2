@@ -7,6 +7,6 @@ using System.Threading.Tasks;
 namespace DesignPattern_Lab2
 {
     public abstract class WeaponUpgrader : Weapon {
-        public abstract Weapon Upgrade(Weapon weapon);
+        public abstract void Upgrade(Weapon weapon);
     }
 }

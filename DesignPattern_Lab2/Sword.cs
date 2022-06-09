@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace DesignPattern_Lab2 {
     class Sword : Weapon {
         public Sword() {
-            Name = "Sword";
+            SetName("Sword");
             ChangeAttackDamage(15);
         }    
     }

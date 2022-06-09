@@ -5,14 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace DesignPattern_Lab2 {
-    public class Fire : WeaponUpgrader {
+    public class DragonBreath : WeaponUpgrader {
 
         private Weapon _weapon;
         private readonly string _name;
 
-        public Fire(Weapon weapon) {
+        public DragonBreath(Weapon weapon) {
             _weapon = weapon;
-            _name = "Fire";
+            _name = "DragonBreath";
             _weapon.AddAddOn(_name);
             _weapon.ChangeAttackDamage(10);
         }

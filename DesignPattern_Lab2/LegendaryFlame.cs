@@ -5,16 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace DesignPattern_Lab2 {
-    public class Fire : WeaponUpgrader {
+    public class LegendaryFlame : WeaponUpgrader {
 
         private Weapon _weapon;
         private readonly string _name;
 
-        public Fire(Weapon weapon) {
+        public LegendaryFlame(Weapon weapon) {
             _weapon = weapon;
-            _name = "Fire";
+            _name = "LegendaryFlame";
             _weapon.AddAddOn(_name);
-            _weapon.ChangeAttackDamage(10);
+            _weapon.ChangeAttackDamage(50);
         }
 
         public override void Upgrade(Weapon weapon) {

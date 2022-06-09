@@ -10,11 +10,6 @@ namespace DesignPattern_Lab2 {
         private string _name;
         private readonly List<string> _addOns = new();
 
-        public string Name {
-            get { return _name; }
-            set { _name = value; }
-        }
-
         public int ChangeAttackDamage(int attackDamage) {
             _attackDamage += attackDamage;
             return _attackDamage;
@@ -22,6 +17,18 @@ namespace DesignPattern_Lab2 {
 
         public virtual int Attack() {
             return _attackDamage;
+        }
+
+        public virtual string GetName() {
+            return _name;
+        }
+
+        public virtual void SetName(string name) {
+            _name = name;
+        }
+
+        public List<string> GetAddOns() {
+            return _addOns;
         }
 
         public void AddAddOn(string addOn) {
